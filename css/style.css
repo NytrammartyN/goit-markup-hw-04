@@ -138,6 +138,11 @@ img {
 .header_nav_link.current {
   color: var(--accent-text-color);
 }
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* -------------Main SECT------------- */
 .body {
   background-color: var(--main-background-color);
@@ -147,6 +152,21 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 .section_Hero_title {
   margin-bottom: 30px;
@@ -205,7 +225,7 @@ img {
   margin-right: 8px;
 }
 
-.bttn_port {
+/* .bttn_port {
   display: inline-block;
   min-width: 73px;
   border-radius: 4px;
@@ -226,7 +246,9 @@ img {
 .bttn_port:hover,
 .bttn_port:focus {
   background-color: var(--hover-color);
-}
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+} */
 
 .bttns {
   display: inline-block;
@@ -252,6 +274,8 @@ img {
 .bttns:target {
   background-color: var(--accent-text-color);
   color: var(--main-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .our_project_list {
@@ -261,6 +285,11 @@ img {
 }
 .our_project_item {
   margin: 15px;
+}
+.our_project_item:hover,
+.our_project_item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .our_project_border {
