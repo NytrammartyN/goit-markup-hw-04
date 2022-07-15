@@ -7,6 +7,7 @@
   --main-text-color: #212121;
   --other-text-color: #757575;
   --accent-text-color: #2196f3;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 
   /* -------------bg colors------------- */
   --main-background-color: #ffffff;
@@ -127,6 +128,10 @@ img {
   padding-bottom: 32px;
   display: block;
 }
+.contact_icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 .header_nav_link:hover,
 .header_nav_link:focus,
@@ -139,10 +144,6 @@ img {
   color: var(--accent-text-color);
 }
 
-.contact-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
 /* -------------Main SECT------------- */
 .body {
   background-color: var(--main-background-color);
@@ -364,6 +365,22 @@ img {
   color: var(--other-text-color);
 }
 
+.credo-icon {
+  align-items: center;
+}
+
+.credo-icon-fon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
+}
+
 /* -------------What are we doing sec------------- */
 .we_section {
   padding-bottom: 94px;
@@ -449,6 +466,99 @@ img {
   color: var(--other-text-color);
 }
 
+.team-social-list {
+  display: flex;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: var(--main-background-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+.team-social-icon {
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
+}
+
+/* ---------------КЛИЕНТЫ---------------- */
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-item {
+  width: 170px;
+  height: 90px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  width: 170px;
+  height: 90px;
+  display: block;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  background-color: var(--main-background-color);
+  padding: 16px 32px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
 /*   -------------footer sect-------------  */
 
 .footer {
@@ -529,4 +639,72 @@ img {
 .tel_item:hover,
 .tel_item:focus {
   color: var(--hover-color);
+}
+
+.footer_flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_social_text {
+  padding: 20px 0px 10px 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+
+.footer_social_flex {
+  margin-left: 70px;
+  width: 206px;
+}
+
+.footer_social_list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_social_item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer_social_link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: var(--main-background-color);
+  background-color: #ffffff10;
+}
+
+.footer_social_link:hover,
+.footer_social_link:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+.footer_social_icon {
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
+}
+
+.footer_contact_link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
+
+.footer_contact_link:hover,
+.footer_contact_link:focus {
+  color: var(--accent-text-color);
 }
