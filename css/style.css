@@ -500,13 +500,13 @@ img {
   fill: currentColor;
 }
 
-/* ---------------КЛИЕНТЫ---------------- */
-.client-section {
+/* --------------- Clients ---------------- */
+.client_section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.client-title {
+.client_title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -515,7 +515,7 @@ img {
   text-align: center;
 }
 
-.client-list {
+.client_list {
   display: flex;
   padding: 0;
   margin: 0;
@@ -524,37 +524,38 @@ img {
   align-items: center;
 }
 
-.client-item {
+.client_item {
   width: 170px;
   height: 90px;
 }
 
-.client-item:not(:last-child) {
+.client_item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.client_link {
   width: 170px;
   height: 90px;
   display: block;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   color: #afb1b8;
   background-color: var(--main-background-color);
   padding: 16px 32px;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client_link:hover,
+.client_link:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
 
-.client-icon {
+.client_icon {
   fill: currentColor;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client_item:hover,
+.client_item:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
