@@ -108,10 +108,6 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-
-  position: relative;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_list_contacts {
@@ -132,8 +128,6 @@ img {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact_icon {
   margin-right: 10px;
@@ -149,19 +143,6 @@ img {
 
 .header_nav_link.current {
   color: var(--accent-text-color);
-}
-
-.header_nav_link.current::after {
-  position: absolute;
-
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom: -1px;
-
-  background-color: var(--accent-text-color);
 }
 
 /* -------------Main SECT------------- */
@@ -223,9 +204,6 @@ img {
 
   color: var(--main-background-color);
   background-color: var(--accent-text-color);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bttn:hover,
@@ -290,7 +268,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our_project_item:hover .our_project_overlay {
+.our_project_item:hover .our_project-overlay {
   transform: translateY(0);
 }
 
@@ -298,36 +276,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-
-.our_project_overlay {
-  position: absolute;
-
-  display: inline-block;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-
-  background-color: rgba(33, 150, 243, 0.9);
-
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our_project_description_text {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  padding: 63px 24px;
-
-  font-size: 18px;
-  line-height: 1.56;
-
-  color: var(--white-text-color);
-}
-
+.our_project_overlay
 .our_project_border {
   border: 1px solid #eeeeee;
   border-top: transparent;
@@ -415,7 +364,7 @@ img {
   background-color: var(--team-background-color);
 }
 
-/* -------------What are we doing------------- */
+/* -------------What are we doing sec------------- */
 .we_section {
   padding-bottom: 94px;
 }
@@ -438,27 +387,6 @@ img {
 .we_item:not(:last-child) {
   margin-right: 30px;
 }
-.we_item {
-  position: relative;
-}
-
-.work_text {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  padding: 27px 0px;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: var(--main-background-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
 
 /* -------------our team sect-------------*/
 .team_section {
@@ -476,7 +404,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--main-background-color);
+  color: var(--main-text-color);
 
   margin-bottom: 50px;
 }
@@ -537,9 +465,6 @@ img {
   background-color: var(--main-background-color);
   justify-content: center;
   align-items: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -590,9 +515,6 @@ img {
   background-color: var(--main-background-color);
   justify-content: center;
   align-items: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client_link:hover,
@@ -605,11 +527,11 @@ img {
   fill: currentColor;
 }
 
-/* .client_item:hover,
+.client_item:hover,
 .client_item:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
-} */
+}
 
 /*   -------------footer sect-------------  */
 
@@ -672,21 +594,9 @@ img {
 .footer_location_link:focus {
   color: var(--hover-color);
 }
-
-.footer_location_link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .mail_tel_link:hover,
 .mail_tel_link:focus {
   color: var(--hover-color);
-}
-
-.mail_tel_link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .container {
